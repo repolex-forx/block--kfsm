@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/block/kfsm/commit/45edb7a1ce581d634c6b042b6556c231be7e3e49",
       "git:hexsha": "45edb7a1ce581d634c6b042b6556c231be7e3e49",
-      "repolex:parseStatus": "ast_complete",
+      "repolex:parseStatus": "enrich_complete",
       "git:tagName": "main"
     },
     {

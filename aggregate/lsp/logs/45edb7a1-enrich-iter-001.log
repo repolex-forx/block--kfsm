@@ -1,0 +1,20 @@
+[2026-10-01T09:45:06Z] === ENRICH ITERATION 1 START | repo=block/kfsm sha=45edb7a1 ===
+[2026-10-01T09:45:06Z] [iter=1] PHASE START: enrich repo=block/kfsm sha=45edb7a1 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/45edb7a1-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/45edb7a1ce581d634c6b042b6556c231be7e3e49.nq.gz
+[2026-10-01T09:45:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-01T09:45:08Z] [iter=1] AST store loaded triples=257295 load_secs=2 mem_mb=482 MB
+[2026-10-01T09:45:08Z] [iter=1] Step 2: Finding LSP targets mem_mb=482 MB
+[2026-10-01T09:45:09Z] [iter=1] LSP targets found call_sites=2186 imports=212 extends=0 implements=0 secs=1
+[2026-10-01T09:45:10Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=482 MB
+[2026-10-01T09:45:11Z] [iter=1] Position index built positions=15143 nodes_with_types=18411 secs=1 mem_mb=482 MB
+[2026-10-01T09:45:11Z] [iter=1] Step 3: Starting LSP resolution mem_mb=482 MB already_completed_types=[] already_completed_files=0
+[2026-10-01T09:45:11Z] [iter=1] Resolving target type target_type=call_site count=2186
+[2026-10-01T09:45:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=2 resolved=1 errors=150 current=lib-jooq/src/main/kotlin/app/cash/kfsm/v2/jooq/JooqPendingRequestStore.kt
+[2026-10-01T09:46:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=10 resolved=56 errors=444 current=lib/src/test/kotlin/app/cash/kfsm/v2/WorkflowBuilderTest.kt
+[2026-10-01T09:46:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=18 resolved=107 errors=737 current=example/src/main/kotlin/app/cash/kfsm/v2/exemplar/document/infra/MockVirusScanner.kt
+[2026-10-01T09:47:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=41 resolved=138 errors=977 current=bin/rmid
+[2026-10-01T09:47:17Z] [iter=1] Target type resolved target_type=call_site resolved=138 errors=977 secs=126 mem_mb=482 MB
+[2026-10-01T09:47:17Z] [iter=1] Resolving target type target_type=import_statement count=212
+[2026-10-01T09:47:32Z] [iter=1] Target type resolved target_type=import_statement resolved=0 errors=0 secs=14 mem_mb=482 MB
+[2026-10-01T09:47:46Z] [iter=1] Step 5: Writing final enrichment file triples=13083
+[2026-10-01T09:47:47Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/45edb7a1ce581d634c6b042b6556c231be7e3e49.nq.gz size_kb=226
+[2026-10-01T09:47:47Z] [iter=1] PHASE END: enrich elapsed_s=160 elapsed_min=2.7 total_triples=13083
